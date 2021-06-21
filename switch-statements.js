@@ -41,6 +41,22 @@ switch (errorCode) {
 
 const monitorColor = "red";
 
+switch (monitorColor) {
+    case "red":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    case "green":
+        console.log("Hartslag stabiel");
+        break;
+    case "yellow":
+        console.log("Hartslag verhoogd");
+        break;
+    case "orange":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    default:
+        console.log("Status van de hartslag onbekend")
+}
 // Deze variabele zal altijd een kleur bevatten. De specifieke kleuren waar een melding bij gemaakt moet worden zijn: "red", "green", "yellow" en "orange".
 // Deze codes zijn gelinkt aan de volgende meldingen:
 // "green": "Hartslag stabiel"
@@ -58,3 +74,19 @@ const monitorColor = "red";
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: kun je de switch-statement uit opdracht 2 ook opschrijven met een aantal if-statements?
 // ==========================================
+
+const errorCodeBonus = 3;
+
+if (errorCodeBonus === 0) {
+    console.log("Geen watertoevoer");
+}else if (errorCodeBonus === 1) {
+    console.log("Temperatuur te laag");
+}else if (errorCodeBonus === 2) {
+    console.log("Koffiebonen op");
+}else if (errorCodeBonus === 3) {
+    console.log("Afvalbak vol");
+}else if (errorCodeBonus === 4) {
+    console.log("Geen druk");
+}else {
+    console.log("Onbekende foutcode")
+}
