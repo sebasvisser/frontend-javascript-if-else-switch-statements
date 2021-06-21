@@ -4,6 +4,24 @@
 
 const errorCode = 0;
 
+switch (errorCode) {
+    case 0:
+        console.log("Geen watertoevoer");
+        break;
+    case 1:
+        console.log("Temperatuur te laag");
+        break;
+    case 2:
+        console.log("Koffiebonen op");
+        break;
+    case 3:
+        console.log("Afvalbak vol");
+        break;
+    case 4:
+        console.log("Geen druk");
+        break;
+}
+
 // Je mag ervanuit gaan dat deze variabele altijd een waarde tussen de 0 en de 4 bevat. Deze codes hebben de volgende betekenissen (foutmeldingen):
 // 0: "Geen watertoevoer"
 // 1: "Temperatuur te laag"
